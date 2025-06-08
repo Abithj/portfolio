@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abith Joseph Biju</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #00bcd4;
+      --transition: all 0.3s ease;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #333;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      background: rgba(51, 51, 51, 0.9);
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: var(--primary);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .social-icons a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #fff;
+      transition: var(--transition);
+    }
+
+    .social-icons a:hover {
+      background: #fff;
+      color: var(--primary);
+      transform: translateY(-5px);
+    }
+
+    section {
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: #1f1c2c;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .skill-button {
+      background-color: black;
+      border: 2px solid white;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: var(--transition);
+    }
+
+    .skill-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .contact-info {
+      position: relative;
+      text-align: center;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+      color: #333;
+    }
+
+    .contact-info h3::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #333;
+      border-radius: 3px;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .info-item i {
+      margin-right: 0.75rem;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      margin-top: 3rem;
+    }
+
+    .footer-logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .skills {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-icons {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Abith Joseph Biju</h1>
+  <p>Web Developer | Designer | Creator</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="social-icons">
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#"><i class="fab fa-github"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi! I'm a passionate student web developer and UI/UX designer currently studying Computer Science and Engineering. I specialize in front-end development and user experience design.
+    <br><br>
+    I craft intuitive, user-centered digital experiences using HTML, CSS, JavaScript, and design tools like Figma and Adobe XD. Whether it's prototyping a mobile app or building a responsive website, I aim to create beautiful, accessible, and functional solutions.
+    <br><br>
+    I'm always eager to learn, grow, and collaborate on innovative projects that challenge my creativity and technical skills.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <button class="skill-button">JavaScript</button>
+    <button class="skill-button">C</button>
+    <button class="skill-button">Python</button>
+    <button class="skill-button">Figma</button>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <div class="info-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Amal Jyothi College Of Engineering</span>
+    </div>
+    <div class="info-item">
+      <i class="fas fa-envelope"></i>
+      <span>abithjosephbiju31@gmail.com</span>
+    </div>
+    <div class="info-item">
+      <i
